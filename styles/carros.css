@@ -1,0 +1,116 @@
+/* Importando uma fonte mais descontraída e moderna */
+@import url('https://googleapis.com');
+
+/* Configurações Globais Divertidas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', system-ui, sans-serif;
+}
+
+body {
+    background-color: #f0fdf4; /* Fundo verde-claro bem leve e refrescante */
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o título e os botões do menu */
+}
+
+/* Título Principal Estilo Pop/Cartoon */
+h1 {
+    color: #10b981; /* Verde esmeralda vibrante */
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0px #bbf7d0;
+    transform: rotate(-1deg);
+}
+
+/* Links de Navegação como Botões de Jogo/Menu Pop */
+body > a {
+    display: inline-block;
+    background-color: #ffedd5; /* Laranja pastel bem clarinho */
+    color: #ea580c; /* Laranja vibrante */
+    text-decoration: none;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 50px; /* Botões bem redondinhos e amigáveis */
+    font-weight: 600;
+    font-size: 1rem;
+    border: 3px solid #f97316;
+    box-shadow: 0px 4px 0px #ea580c; /* Efeito de botão 3D de videogame */
+    transition: all 0.1s ease;
+    position: relative;
+    z-index: 10; /* Garante que fiquem visíveis e clicáveis */
+}
+
+body > a:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 0px #ea580c; /* Botão "afunda" ao passar o mouse */
+    background-color: #f97316;
+    color: #ffffff;
+}
+
+/* Títulos dos Carros Coloridos e Destacados */
+h2 {
+    color: #ffffff;
+    background-color: #3b82f6; /* Azul vibrante */
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 12px;
+    margin-top: 120px; /* Empurra o primeiro h2 bem para baixo do menu */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    box-shadow: 3px 3px 0px #1d4ed8;
+    text-align: left;
+    float: left; /* Garante que o título quebre a linha após os links */
+    clear: both;
+}
+
+/* Mudando as cores dos títulos de cada carro para ficar bem dinâmico */
+h2[id="uno"] { background-color: #ef4444; box-shadow: 3px 3px 0px #b91c1c; } /* Vermelho pro Uno */
+h2[id="relampago"] { background-color: #f59e0b; box-shadow: 3px 3px 0px #b45309; } /* Amarelo pro Relâmpago */
+h2[id="tesla"] { background-color: #06b6d4; box-shadow: 3px 3px 0px #0e7490; } /* Ciano pro Tesla */
+h2[id="byd"] { background-color: #8b5cf6; box-shadow: 3px 3px 0px #6d28d9; } /* Roxo pro BYD */
+
+/* Parágrafos de Texto Amigáveis */
+p {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    color: #334155;
+    background-color: #ffffff; /* Caixas brancas de texto para destacar do fundo */
+    padding: 15px;
+    border-radius: 16px;
+    border: 2px dashed #cbd5e1; /* Borda tracejada divertida */
+    text-align: justify;
+    clear: both;
+}
+
+/* Imagens Compactas com Moldura de Polaroid/Quadrinho */
+img {
+    display: block;
+    max-width: 320px; /* Mantém o tamanho reduzido */
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 10px; /* Espaço interno para parecer uma foto polaroid */
+    margin: 20px auto 40px auto;
+    border: 4px solid #1e293b; /* Borda grossa estilo cartoon */
+    box-shadow: 5px 5px 0px #cbd5e1;
+    transform: rotate(1deg); /* Levemente tortinha para dar charme */
+    transition: transform 0.2s ease;
+    clear: both;
+}
+
+img:hover {
+    transform: scale(1.05) rotate(-1deg); /* Efeito dinâmico ao passar o mouse */
+}
+
+/* Suavizar a rolagem ao clicar nos links */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px; /* Evita que o topo da página corte o título ao rolar */
+}
