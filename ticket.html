@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ticket</title>
+    </head>
+    <body>
+        <h1>Preencha suas informações para o seu ticket de estacionamento</h1>
+        <fieldset>
+            <legend>informações do responsável</legend>
+        <form action="ticket.php">
+            <div>
+                <label for="campo-nome-adulto">Nome completo do responsável:</label>
+                <input type="text" id="campo-nome-adulto" name="campo-nome-adulto"  minlength="5" maxlength="50" required>
+            </div>
+            <div>
+                <label for="cpf-responsavel">CPF do responsável:</label>
+                <input type="text" id="cpf-responsavel" name="cpf-responsavel" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato: 000.000.000-00" minlength="14" maxlength="14" required>
+            </div>
+            <div>
+                <label for="telefone-responsavel">Telefone do responsável:</label>
+                <input type="tel" id="telefone-responsavel" name="telefone-responsavel" pattern="\(\d{2}\)\s9\d{4}-\d{4}" required>
+            </div>
+            <div>
+                <label for="email-responsavel">E-mail do responsável:</label>
+                <input type="email" id="email-responsavel" name="email-responsavel" required>
+            </div>
+            <div>
+                <label for="data-nascimento-resp">Data de nascimento do responsável:</label>
+                <input type="date" id="data-nascimento-resp" name="data-nascimento-resp" required>
+            </div>
+        </fieldset>
+        <fieldset>
+                <legend>Informações da nossa convidada(o) especial!!</legend>
+            <h2>Agora preencha os dados abaixo com as informações da nossa convidada(o) especial!!</h2>
+
+            <div>
+                <label for="nome-crianca">Nome completo da criança:</label>
+                <input type="text" id="nome-crianca" name="nome-crianca" required>
+            </div>
+            <div>
+                <label for="cpf-crianca">CPF da criança:</label>
+                <input type="text" id="cpf-crianca" name="cpf-crianca" title="Digite o CPF no formato: 000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+            </div>
+            <div>
+                <label for="data-nascimento-cri">Data de nascimento da criança:</label>
+                <input type="date" id="data-nascimento-cri" name="data-nascimento-cri" required>
+            </div>
+            </fieldset>
+
+    <fieldset>
+                <legend>Confira nossas formas de pagamento:</legend>
+                <h3>Confira nossas formas de pagamento:</h3>
+        
+            <div>
+                <label for="nome-cartao">Nome impresso no seu cartão:</label>
+                <input type="text" id="nome-cartao" name="nome-cartao" placeholder="nome impresso no seu cartão" required>
+            </div>
+            <div>
+                <label for="numero-cartao">Insira os números do seu cartão:</label>
+                <input type="text" id="numero-cartao" name="numero-cartao" placeholder="0000 0000 0000 0000" minlength="13" maxlength="19" required>
+            </div>
+            <div>
+                <label for="validade-mes">Insira o mês da validade:</label>
+                <input type="number" id="validade-mes" name="validade-mes" min="1" max="12" required>
+            </div>
+            <div>
+                <label for="validade-ano">Insira o ano de validade:</label>
+                <input type="number" id="validade-ano" maxlength="4" pattern="\d{4}" name="validade-ano" required>
+            </div>
+            <div>
+                <label for="cvc-cartao">Código no verso do cartão:</label>
+                <input type="number" id="cvc-cartao" name="cvc-cartao" pattern="\d{3,4}" placeholder="***" required>
+            </div>
+            <button type="submit">Enviar</button>
+    </fieldset>
+        </form>
+        <h2>Valor total de 103,97</h2>
+    </body>
+    </html>
